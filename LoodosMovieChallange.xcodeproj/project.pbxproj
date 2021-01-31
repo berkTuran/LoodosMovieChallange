@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FA8879BE5F801DE5149CC2C /* Pods_LoodosMovieChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596272175F4905C8C1FB5EB0 /* Pods_LoodosMovieChallange.framework */; };
 		903C9ECC25C73230001405A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECB25C73230001405A8 /* AppDelegate.swift */; };
 		903C9ECE25C73230001405A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECD25C73230001405A8 /* SceneDelegate.swift */; };
 		903C9ED025C73230001405A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECF25C73230001405A8 /* ViewController.swift */; };
 		903C9ED325C73230001405A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED125C73230001405A8 /* Main.storyboard */; };
 		903C9ED525C73234001405A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED425C73234001405A8 /* Assets.xcassets */; };
 		903C9ED825C73234001405A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED625C73234001405A8 /* LaunchScreen.storyboard */; };
+		903C9EE125C733D4001405A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 903C9EE025C733D4001405A8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2224767DDEBD459F422102 /* Pods-LoodosMovieChallange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieChallange.release.xcconfig"; path = "Target Support Files/Pods-LoodosMovieChallange/Pods-LoodosMovieChallange.release.xcconfig"; sourceTree = "<group>"; };
+		569A460DFBC0CEC7F70495A9 /* Pods-LoodosMovieChallange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieChallange.debug.xcconfig"; path = "Target Support Files/Pods-LoodosMovieChallange/Pods-LoodosMovieChallange.debug.xcconfig"; sourceTree = "<group>"; };
+		596272175F4905C8C1FB5EB0 /* Pods_LoodosMovieChallange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosMovieChallange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		903C9EC825C73230001405A8 /* LoodosMovieChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovieChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		903C9ECB25C73230001405A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		903C9ECD25C73230001405A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		903C9ED425C73234001405A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903C9ED725C73234001405A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903C9ED925C73234001405A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903C9EE025C733D4001405A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA8879BE5F801DE5149CC2C /* Pods_LoodosMovieChallange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2465F9DFEB262563D6317048 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				569A460DFBC0CEC7F70495A9 /* Pods-LoodosMovieChallange.debug.xcconfig */,
+				1E2224767DDEBD459F422102 /* Pods-LoodosMovieChallange.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D2EBC215B0673B96345D0BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				596272175F4905C8C1FB5EB0 /* Pods_LoodosMovieChallange.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		903C9EBF25C73230001405A8 = {
 			isa = PBXGroup;
 			children = (
 				903C9ECA25C73230001405A8 /* LoodosMovieChallange */,
 				903C9EC925C73230001405A8 /* Products */,
+				2465F9DFEB262563D6317048 /* Pods */,
+				6D2EBC215B0673B96345D0BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,7 @@
 		903C9ECA25C73230001405A8 /* LoodosMovieChallange */ = {
 			isa = PBXGroup;
 			children = (
+				903C9EE025C733D4001405A8 /* GoogleService-Info.plist */,
 				903C9ECB25C73230001405A8 /* AppDelegate.swift */,
 				903C9ECD25C73230001405A8 /* SceneDelegate.swift */,
 				903C9ECF25C73230001405A8 /* ViewController.swift */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 903C9EDC25C73234001405A8 /* Build configuration list for PBXNativeTarget "LoodosMovieChallange" */;
 			buildPhases = (
+				FF5BBDE5D9C84FC1CC512128 /* [CP] Check Pods Manifest.lock */,
 				903C9EC425C73230001405A8 /* Sources */,
 				903C9EC525C73230001405A8 /* Frameworks */,
 				903C9EC625C73230001405A8 /* Resources */,
+				8FC802F874C30C32443A9C66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				903C9ED825C73234001405A8 /* LaunchScreen.storyboard in Resources */,
+				903C9EE125C733D4001405A8 /* GoogleService-Info.plist in Resources */,
 				903C9ED525C73234001405A8 /* Assets.xcassets in Resources */,
 				903C9ED325C73230001405A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FC802F874C30C32443A9C66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosMovieChallange/Pods-LoodosMovieChallange-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosMovieChallange/Pods-LoodosMovieChallange-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoodosMovieChallange/Pods-LoodosMovieChallange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5BBDE5D9C84FC1CC512128 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoodosMovieChallange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		903C9EC425C73230001405A8 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		903C9EDD25C73234001405A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569A460DFBC0CEC7F70495A9 /* Pods-LoodosMovieChallange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		903C9EDE25C73234001405A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2224767DDEBD459F422102 /* Pods-LoodosMovieChallange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
