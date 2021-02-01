@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		903C9ED525C73234001405A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED425C73234001405A8 /* Assets.xcassets */; };
 		903C9ED825C73234001405A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED625C73234001405A8 /* LaunchScreen.storyboard */; };
 		903C9EE125C733D4001405A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 903C9EE025C733D4001405A8 /* GoogleService-Info.plist */; };
+		9080652525C7A425006DC09C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080652425C7A425006DC09C /* NetworkService.swift */; };
+		9080652C25C7AE0B006DC09C /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080652B25C7AE0B006DC09C /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		903C9ED725C73234001405A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903C9ED925C73234001405A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		903C9EE025C733D4001405A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9080652425C7A425006DC09C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9080652B25C7AE0B006DC09C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,6 @@
 				569A460DFBC0CEC7F70495A9 /* Pods-LoodosMovieChallange.debug.xcconfig */,
 				1E2224767DDEBD459F422102 /* Pods-LoodosMovieChallange.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,16 +86,58 @@
 		903C9ECA25C73230001405A8 /* LoodosMovieChallange */ = {
 			isa = PBXGroup;
 			children = (
+				9080652325C7A3B0006DC09C /* Models */,
+				9080652225C7A3A1006DC09C /* Services */,
 				903C9EE025C733D4001405A8 /* GoogleService-Info.plist */,
-				903C9ECB25C73230001405A8 /* AppDelegate.swift */,
-				903C9ECD25C73230001405A8 /* SceneDelegate.swift */,
-				903C9ECF25C73230001405A8 /* ViewController.swift */,
-				903C9ED125C73230001405A8 /* Main.storyboard */,
-				903C9ED425C73234001405A8 /* Assets.xcassets */,
-				903C9ED625C73234001405A8 /* LaunchScreen.storyboard */,
+				9080651E25C796D5006DC09C /* Common */,
+				9080652025C796F8006DC09C /* Controllers */,
+				9080651F25C796E5006DC09C /* Storyboards */,
 				903C9ED925C73234001405A8 /* Info.plist */,
 			);
 			path = LoodosMovieChallange;
+			sourceTree = "<group>";
+		};
+		9080651E25C796D5006DC09C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				903C9ED425C73234001405A8 /* Assets.xcassets */,
+				903C9ECB25C73230001405A8 /* AppDelegate.swift */,
+				903C9ECD25C73230001405A8 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9080651F25C796E5006DC09C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				903C9ED125C73230001405A8 /* Main.storyboard */,
+				903C9ED625C73234001405A8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9080652025C796F8006DC09C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				903C9ECF25C73230001405A8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9080652225C7A3A1006DC09C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9080652425C7A425006DC09C /* NetworkService.swift */,
+				9080652B25C7AE0B006DC09C /* FirebaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9080652325C7A3B0006DC09C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				903C9ED025C73230001405A8 /* ViewController.swift in Sources */,
+				9080652C25C7AE0B006DC09C /* FirebaseService.swift in Sources */,
 				903C9ECC25C73230001405A8 /* AppDelegate.swift in Sources */,
+				9080652525C7A425006DC09C /* NetworkService.swift in Sources */,
 				903C9ECE25C73230001405A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
