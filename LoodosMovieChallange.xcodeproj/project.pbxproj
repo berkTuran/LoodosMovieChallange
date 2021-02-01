@@ -10,13 +10,17 @@
 		6FA8879BE5F801DE5149CC2C /* Pods_LoodosMovieChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596272175F4905C8C1FB5EB0 /* Pods_LoodosMovieChallange.framework */; };
 		903C9ECC25C73230001405A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECB25C73230001405A8 /* AppDelegate.swift */; };
 		903C9ECE25C73230001405A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECD25C73230001405A8 /* SceneDelegate.swift */; };
-		903C9ED025C73230001405A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECF25C73230001405A8 /* ViewController.swift */; };
+		903C9ED025C73230001405A8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9ECF25C73230001405A8 /* SplashViewController.swift */; };
 		903C9ED325C73230001405A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED125C73230001405A8 /* Main.storyboard */; };
 		903C9ED525C73234001405A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED425C73234001405A8 /* Assets.xcassets */; };
 		903C9ED825C73234001405A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C9ED625C73234001405A8 /* LaunchScreen.storyboard */; };
 		903C9EE125C733D4001405A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 903C9EE025C733D4001405A8 /* GoogleService-Info.plist */; };
 		9080652525C7A425006DC09C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080652425C7A425006DC09C /* NetworkService.swift */; };
 		9080652C25C7AE0B006DC09C /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080652B25C7AE0B006DC09C /* FirebaseService.swift */; };
+		9080654125C7B1B6006DC09C /* RemoteConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080654025C7B1B6006DC09C /* RemoteConfigKey.swift */; };
+		9080654625C7BDFA006DC09C /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080654525C7BDFA006DC09C /* AlertFactory.swift */; };
+		9080654D25C7BF57006DC09C /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080654C25C7BF57006DC09C /* AlertType.swift */; };
+		9080655725C7C40A006DC09C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080655625C7C40A006DC09C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +30,7 @@
 		903C9EC825C73230001405A8 /* LoodosMovieChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovieChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		903C9ECB25C73230001405A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		903C9ECD25C73230001405A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		903C9ECF25C73230001405A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		903C9ECF25C73230001405A8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		903C9ED225C73230001405A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		903C9ED425C73234001405A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903C9ED725C73234001405A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +38,10 @@
 		903C9EE025C733D4001405A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9080652425C7A425006DC09C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9080652B25C7AE0B006DC09C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		9080654025C7B1B6006DC09C /* RemoteConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigKey.swift; sourceTree = "<group>"; };
+		9080654525C7BDFA006DC09C /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
+		9080654C25C7BF57006DC09C /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		9080655625C7C40A006DC09C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +127,8 @@
 		9080652025C796F8006DC09C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				903C9ECF25C73230001405A8 /* ViewController.swift */,
+				903C9ECF25C73230001405A8 /* SplashViewController.swift */,
+				9080655625C7C40A006DC09C /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,8 +136,8 @@
 		9080652225C7A3A1006DC09C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9080652425C7A425006DC09C /* NetworkService.swift */,
-				9080652B25C7AE0B006DC09C /* FirebaseService.swift */,
+				9080654425C7BDCF006DC09C /* Alerts&Notifications */,
+				9080654325C7BDBD006DC09C /* Network&Database */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,8 +145,27 @@
 		9080652325C7A3B0006DC09C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9080654025C7B1B6006DC09C /* RemoteConfigKey.swift */,
+				9080654C25C7BF57006DC09C /* AlertType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9080654325C7BDBD006DC09C /* Network&Database */ = {
+			isa = PBXGroup;
+			children = (
+				9080652425C7A425006DC09C /* NetworkService.swift */,
+				9080652B25C7AE0B006DC09C /* FirebaseService.swift */,
+			);
+			path = "Network&Database";
+			sourceTree = "<group>";
+		};
+		9080654425C7BDCF006DC09C /* Alerts&Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9080654525C7BDFA006DC09C /* AlertFactory.swift */,
+			);
+			path = "Alerts&Notifications";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				903C9ED025C73230001405A8 /* ViewController.swift in Sources */,
+				9080654D25C7BF57006DC09C /* AlertType.swift in Sources */,
+				903C9ED025C73230001405A8 /* SplashViewController.swift in Sources */,
+				9080654125C7B1B6006DC09C /* RemoteConfigKey.swift in Sources */,
 				9080652C25C7AE0B006DC09C /* FirebaseService.swift in Sources */,
 				903C9ECC25C73230001405A8 /* AppDelegate.swift in Sources */,
+				9080654625C7BDFA006DC09C /* AlertFactory.swift in Sources */,
+				9080655725C7C40A006DC09C /* MainViewController.swift in Sources */,
 				9080652525C7A425006DC09C /* NetworkService.swift in Sources */,
 				903C9ECE25C73230001405A8 /* SceneDelegate.swift in Sources */,
 			);
