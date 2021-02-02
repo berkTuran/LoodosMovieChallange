@@ -15,6 +15,7 @@ class FirebaseService: NetworkService {
     let remoteConfig = RemoteConfig.remoteConfig()
     let remoteConfigSettings = RemoteConfigSettings()
     let userDefaults = UserDefaults.standard
+    let analytics = Analytics()
     // MARK: - Life Cycle
     override init() {
         remoteConfigSettings.minimumFetchInterval = 0
@@ -34,13 +35,14 @@ class FirebaseService: NetworkService {
     }
     
     func createLogForMovieDetails(movie: Movie) {
-        Analytics.logEvent("movie_details_opened", parameters: [
-            "ownerDevice": UIDevice.current.identifierForVendor!.uuidString as NSObject,
-            "movieTitle": movie.Title! as NSObject,
-            "movieActors": movie.Actors! as NSObject,
-            "imbdRating": movie.imdbRating! as NSObject,
-            "awards": movie.Awards! as NSObject
-        ])
+        let parameters = [
+            "ownerDevice": UIDevice.current.identifierForVendor!.uuidString,
+            "movieTitle": movie.Title! ,
+            "movieActors": movie.Actors! ,
+            "imbdRating": movie.imdbRating! ,
+            "awards": movie.Awards!
+        ]
+        Analytics.logEvent("movieDetailsOpened", parameters: parameters)
     }
     // MARK: - Actions
 }

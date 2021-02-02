@@ -18,7 +18,6 @@ extension MainViewController: UISearchResultsUpdating, UISearchControllerDelegat
             DispatchQueue.main.async {
                 if movie?.Title == nil {
                     let alert = self.alertFactory.createAlert(type: .movie_not_found)
-                    self.activityIndicator.stopAnimating()
                     self.present(alert, animated: true, completion: nil)
                 }else {
                     self.activityIndicator.stopAnimating()
