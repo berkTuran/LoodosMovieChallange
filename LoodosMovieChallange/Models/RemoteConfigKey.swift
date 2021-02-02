@@ -9,4 +9,5 @@ import Foundation
 
 enum RemoteConfigKey: String, CaseIterable {
     case loodos_text = "loodos_text"
+    case omdb_apiKey = "omdb_apiKey"
 }

@@ -21,6 +21,8 @@
 		9080654625C7BDFA006DC09C /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080654525C7BDFA006DC09C /* AlertFactory.swift */; };
 		9080654D25C7BF57006DC09C /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080654C25C7BF57006DC09C /* AlertType.swift */; };
 		9080655725C7C40A006DC09C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080655625C7C40A006DC09C /* MainViewController.swift */; };
+		9080655A25C7CDBA006DC09C /* OmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080655925C7CDBA006DC09C /* OmdbService.swift */; };
+		9080655D25C7D72D006DC09C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080655C25C7D72D006DC09C /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		9080654525C7BDFA006DC09C /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
 		9080654C25C7BF57006DC09C /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		9080655625C7C40A006DC09C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9080655925C7CDBA006DC09C /* OmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbService.swift; sourceTree = "<group>"; };
+		9080655C25C7D72D006DC09C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			children = (
 				9080654025C7B1B6006DC09C /* RemoteConfigKey.swift */,
 				9080654C25C7BF57006DC09C /* AlertType.swift */,
+				9080655C25C7D72D006DC09C /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			children = (
 				9080652425C7A425006DC09C /* NetworkService.swift */,
 				9080652B25C7AE0B006DC09C /* FirebaseService.swift */,
+				9080655925C7CDBA006DC09C /* OmdbService.swift */,
 			);
 			path = "Network&Database";
 			sourceTree = "<group>";
@@ -288,9 +294,11 @@
 				9080654125C7B1B6006DC09C /* RemoteConfigKey.swift in Sources */,
 				9080652C25C7AE0B006DC09C /* FirebaseService.swift in Sources */,
 				903C9ECC25C73230001405A8 /* AppDelegate.swift in Sources */,
+				9080655A25C7CDBA006DC09C /* OmdbService.swift in Sources */,
 				9080654625C7BDFA006DC09C /* AlertFactory.swift in Sources */,
 				9080655725C7C40A006DC09C /* MainViewController.swift in Sources */,
 				9080652525C7A425006DC09C /* NetworkService.swift in Sources */,
+				9080655D25C7D72D006DC09C /* Movie.swift in Sources */,
 				903C9ECE25C73230001405A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

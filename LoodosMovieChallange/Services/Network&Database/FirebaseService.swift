@@ -7,12 +7,14 @@
 
 import Foundation
 import Firebase
+
 class FirebaseService: NetworkService {
     // MARK: - UI Elements
     
     // MARK: - properties
     let remoteConfig = RemoteConfig.remoteConfig()
     let remoteConfigSettings = RemoteConfigSettings()
+    let userDefaults = UserDefaults.standard
     // MARK: - Life Cycle
     override init() {
         remoteConfigSettings.minimumFetchInterval = 0
@@ -25,6 +27,7 @@ class FirebaseService: NetworkService {
             for key in RemoteConfigKey.allCases {
                 let parameterByKey = remoteConfig.configValue(forKey: key.rawValue).stringValue ?? ""
                 parameters.updateValue(parameterByKey, forKey: key.rawValue)
+                userDefaults.setValue(parameterByKey, forKey: key.rawValue)
             }
         }
         return parameters
