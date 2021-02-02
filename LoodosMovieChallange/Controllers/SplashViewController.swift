@@ -17,7 +17,7 @@ class SplashViewController: UIViewController {
     let firebaseService = FirebaseService()
     let alertFactory = AlertFactory()
     var myTimer = Timer()
-    var seconds = 3
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +28,15 @@ class SplashViewController: UIViewController {
         if firebaseService.isConnectedToNetwork() {
             internetConnectionControlLabel.text = "Network is Connected"
             remoteConfigResponseLabel.text = firebaseService.getConfigParameters()[RemoteConfigKey.loodos_text.rawValue] as? String
+            
+            var seconds = 3
             Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-                self.seconds -= 1
-                if self.seconds == 0 {
+                seconds -= 1
+                if seconds == 0 {
                     timer.invalidate()
                     self.performSegue(withIdentifier: "goToMainSegue", sender: nil)
+                }else {
+                    self.remoteConfigResponseLabel.text = "\(seconds)"
                 }
             }
         }else {

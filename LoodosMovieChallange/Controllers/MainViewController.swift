@@ -11,27 +11,34 @@ class MainViewController: UIViewController {
 
     // MARK: - UI Elements
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    private let searchController = UISearchController(searchResultsController: nil)
+    @IBOutlet weak var tableView: UITableView!
+    let searchController = UISearchController(searchResultsController: nil)
     // MARK: - properties
     let ombdService = OmdbService()
+    let notificationCenter = NotificationCenter.default
+    let alertFactory = AlertFactory()
+    var movies = [Movie]()
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationBar()
-        activityIndicator.startAnimating()
+        self.tableView.isHidden = true
+        setupSearchController()
+        setupNavigationBar()
+        
     }
     // MARK: - Function
-    func setNavigationBar() {
+    func setupNavigationBar() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.searchController = searchController
+    }
+    func setupSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
         searchController.delegate = self
+        searchController.searchBar.delegate = self
     }
     // MARK: - Actions
 
-}
-
-extension MainViewController: UISearchControllerDelegate {
-    
 }
 

@@ -20,9 +20,11 @@ class OmdbService: NetworkService {
     }
     // MARK: - Function
     func getMovie(_ title: String, completionHandler: @escaping (_ movie: Movie?, _ error: Error?) -> Void){
+        let trimmedTitle = title.replacingOccurrences(of: " ", with: "", options:.literal, range: nil)
+        var requestUrlString = baseUrlString
         let requiredIndex = baseUrlString.index(baseUrlString.startIndex, offsetBy: 26)
-        baseUrlString.insert(contentsOf: title, at: requiredIndex)
-        let requestURL = URL(string: baseUrlString)
+        requestUrlString.insert(contentsOf: trimmedTitle, at: requiredIndex)
+        let requestURL = URL(string: requestUrlString)
         let dataTask = urlSessionSharedInstance.dataTask(with: requestURL!) { (data, response, error) in
             do {
                 if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any] {

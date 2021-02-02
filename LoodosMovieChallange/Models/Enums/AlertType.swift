@@ -9,4 +9,5 @@ import Foundation
 
 enum AlertType {
     case network
+    case movie_not_found
 }

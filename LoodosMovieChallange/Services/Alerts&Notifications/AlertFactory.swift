@@ -26,6 +26,11 @@ class AlertFactory {
             alertController.addAction(cancelAlertAction)
             alertController.addAction(okayAlertAction)
             return alertController
+        case AlertType.movie_not_found:
+            let alertController = UIAlertController(title: "Movie not found", message: "There is no movie with this title. Please try again.", preferredStyle: .alert)
+            alertController.addAction(cancelAlertAction)
+            alertController.addAction(okayAlertAction)
+            return alertController
         }
     }
     // MARK: - Actions
