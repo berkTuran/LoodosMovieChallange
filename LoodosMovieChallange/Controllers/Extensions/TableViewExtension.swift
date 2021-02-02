@@ -22,6 +22,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToMovieDetailSegue", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

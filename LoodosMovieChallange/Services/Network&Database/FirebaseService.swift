@@ -32,5 +32,15 @@ class FirebaseService: NetworkService {
         }
         return parameters
     }
+    
+    func createLogForMovieDetails(movie: Movie) {
+        Analytics.logEvent("movie_details_opened", parameters: [
+            "ownerDevice": UIDevice.current.identifierForVendor!.uuidString as NSObject,
+            "movieTitle": movie.Title! as NSObject,
+            "movieActors": movie.Actors! as NSObject,
+            "imbdRating": movie.imdbRating! as NSObject,
+            "awards": movie.Awards! as NSObject
+        ])
+    }
     // MARK: - Actions
 }

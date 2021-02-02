@@ -26,6 +26,7 @@
 		9080657C25C8DDB4006DC09C /* SearchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080657B25C8DDB4006DC09C /* SearchBarExtensions.swift */; };
 		9080658125C8DF68006DC09C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080658025C8DF68006DC09C /* MovieTableViewCell.swift */; };
 		9080658525C8E046006DC09C /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080658425C8E046006DC09C /* TableViewExtension.swift */; };
+		90F0DB6425C8EE3B00F93EC9 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0DB6325C8EE3B00F93EC9 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		9080657B25C8DDB4006DC09C /* SearchBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarExtensions.swift; sourceTree = "<group>"; };
 		9080658025C8DF68006DC09C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		9080658425C8E046006DC09C /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		90F0DB6325C8EE3B00F93EC9 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				9080657A25C8DDA1006DC09C /* Extensions */,
 				903C9ECF25C73230001405A8 /* SplashViewController.swift */,
 				9080655625C7C40A006DC09C /* MainViewController.swift */,
+				90F0DB6325C8EE3B00F93EC9 /* MovieDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9080654D25C7BF57006DC09C /* AlertType.swift in Sources */,
+				90F0DB6425C8EE3B00F93EC9 /* MovieDetailViewController.swift in Sources */,
 				903C9ED025C73230001405A8 /* SplashViewController.swift in Sources */,
 				9080654125C7B1B6006DC09C /* RemoteConfigKey.swift in Sources */,
 				9080658525C8E046006DC09C /* TableViewExtension.swift in Sources */,

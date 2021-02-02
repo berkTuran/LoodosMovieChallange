@@ -20,7 +20,7 @@ class OmdbService: NetworkService {
     }
     // MARK: - Function
     func getMovie(_ title: String, completionHandler: @escaping (_ movie: Movie?, _ error: Error?) -> Void){
-        let trimmedTitle = title.replacingOccurrences(of: " ", with: "", options:.literal, range: nil)
+        let trimmedTitle = title.replacingOccurrences(of: " ", with: "+", options:.literal, range: nil)
         var requestUrlString = baseUrlString
         let requiredIndex = baseUrlString.index(baseUrlString.startIndex, offsetBy: 26)
         requestUrlString.insert(contentsOf: trimmedTitle, at: requiredIndex)

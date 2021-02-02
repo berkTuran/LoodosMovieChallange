@@ -38,6 +38,12 @@ class MainViewController: UIViewController {
         searchController.delegate = self
         searchController.searchBar.delegate = self
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToMovieDetailSegue" {
+            let viewController = segue.destination as? MovieDetailViewController
+            viewController!.movie = movies[tableView.indexPathForSelectedRow!.row]
+        }
+    }
     // MARK: - Actions
 
 }

@@ -23,12 +23,10 @@ class AlertFactory {
         switch type {
         case AlertType.network:
             let alertController = UIAlertController(title: "No Network Connection", message: "There is a problem in your network. If you believe the problem has been resolved, please try again.", preferredStyle: .alert)
-            alertController.addAction(cancelAlertAction)
             alertController.addAction(okayAlertAction)
             return alertController
         case AlertType.movie_not_found:
             let alertController = UIAlertController(title: "Movie not found", message: "There is no movie with this title. Please try again.", preferredStyle: .alert)
-            alertController.addAction(cancelAlertAction)
             alertController.addAction(okayAlertAction)
             return alertController
         }
